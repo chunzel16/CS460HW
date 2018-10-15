@@ -296,8 +296,8 @@ But In C#, using Console.WriteLine(). If no "using System" in the first, There s
 
 ## Output
 
-![javaoutput](images/javaouput.PNG)
-![C#output](images/C#output.PNG)
+![javaoutput](images/javaoutput.png)
+![C#output](images/C#output.png)
 
 Output for C# is same to java!
 
