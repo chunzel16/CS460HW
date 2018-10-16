@@ -299,7 +299,7 @@ But In C#, using Console.WriteLine(). If no "using System" in the first, There s
 ![output](images/output.png)
 
 
-Output for C# is same to java!
+
 
     
     
