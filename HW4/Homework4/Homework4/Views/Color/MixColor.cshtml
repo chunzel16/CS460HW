@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "MixColor";
+}
+
+<h2>Create A New Color</h2>
+<p>Please enter colors in HTML hexadecimal format: #AABBCC</p>
+
+<div class="row">
+    <div class="col-sm-12">
+        @using (Html.BeginForm("MixColor", "Color", FormMethod.Post, new { id = 0, @class = "myForm" }))
+        {
+            <div class="form-group">
+                @* Razor HTML that gathers user input for the first two colors, adds restrictions for how input should be written *@
+                @Html.Label("FirstColor", "First Color")
+                @Html.TextBox("FirstColor", null, new { @class = "form-control", @pattern = "#[0-9A-Fa-f]{3,6}", @placeholder = "#2B6677", required = "required" })
+
+                @Html.Label("SecondColor", "Second Color")
+                @Html.TextBox("SecondColor", null, new { @class = "form-control", @pattern = "#[0-9A-Fa-f]{3,6}", @placeholder = "#A23144", required = "required" })
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Mix Colors" />
+        }
+
+        @if (ViewBag.show == true)
+        {
+            <br />
+            <div class="row">
+                <div class="col-sm-1" style="width:90px; height:90px; @ViewBag.color1; border-style:solid; border-width:1px"></div>
+                <div class="col-sm-1" style="width:50px;"><h3>+</h3></div>
+                <div class="col-sm-1" style="width:90px; height:90px; @ViewBag.color2; border-style:solid; border-width:1px"></div>
+                <div class="col-sm-1" style="width:50px;"><h3>=</h3></div>
+                <div class="col-sm-1" style="width:90px; height:90px; @ViewBag.newcolor; border-style:solid; border-width:1px"></div>
+            </div>
+        }
+    </div>
+</div>

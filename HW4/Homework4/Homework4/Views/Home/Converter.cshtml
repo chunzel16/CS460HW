@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Converter";
+}
+
+<h2>Converter</h2>
+<form action="Converter" method="get">
+    <div style="padding-bottom:240px;">
+        <div class="col-sm-6">
+
+            <label for="name"><b>Miles</b></label>
+            <p><input type="number" step="0.001" min="0" id="mileNum" name="mileInput"></p>
+            <h4 style="color:darkred; margin-top:160px;"><b>@ViewBag.message</b></h4>
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <ul style="list-style-type:none">
+                <li><h4>Select a Unit</h4></li>
+                <li>
+                    <input type="radio" name="units" id="mm" value="millimeters" checked="checked">
+                    <label for="mm">millimeters</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="units" id="cm" value="centimeters">
+                    <label for="cm">centimeters</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="units" id="m" value="meters">
+                    <label for="m">meters</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="units" id="km" value="kilometers">
+                    <label for="km">kilometers</label>
+                </li>
+            </ul>
+            <button type="submit" class="btn btn-primary">Convert</button>
+        </div>
+    </div>
+
+
+</form>
+
+
