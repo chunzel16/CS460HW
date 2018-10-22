@@ -11,7 +11,6 @@
         @using (Html.BeginForm("MixColor", "Color", FormMethod.Post, new { id = 0, @class = "myForm" }))
         {
             <div class="form-group">
-                @* Razor HTML that gathers user input for the first two colors, adds restrictions for how input should be written *@
                 @Html.Label("FirstColor", "First Color")
                 @Html.TextBox("FirstColor", null, new { @class = "form-control", @pattern = "#[0-9A-Fa-f]{3,6}", @placeholder = "#2B6677", required = "required" })
 
