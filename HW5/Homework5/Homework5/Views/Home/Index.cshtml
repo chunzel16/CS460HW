@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>CS460 Homework5</h1>
+    <p class="lead">As a student of CS 460, I want to use ASP. NET MVC 5 to build a database-enabled Web application so that I can learn how to create and use a local database for persistent storage in my Web application. I'd also like to show you that you can write T-SQL to create and populate a simple database in preparation for the upcoming more complex database.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Fix Application</h2>
+        <p>
+            If there is something wrong with your apartment, please click the button below to fill out the form and we will do it the first time.
+        </p>
+        @Html.ActionLink("Create An Application", "Create", "Requests", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+    
+    <div class="col-md-4">
+        <h2>Request List</h2>
+        <p>Click the button to see the list of household needs.</p>
+        @Html.ActionLink("Request List", "Index", "Requests", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+</div>
