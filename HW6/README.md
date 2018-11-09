@@ -1,4 +1,4 @@
-## Homework5
+## Homework6
 
 [Repo](https://github.com/chunzel16/CS460HW)
 
