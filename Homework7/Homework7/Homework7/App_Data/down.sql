@@ -1,2 +1,2 @@
-﻿DROP TABLE [dbo].[request];
+﻿DROP TABLE [dbo].[Requestlists];
  
